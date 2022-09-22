@@ -11,8 +11,8 @@ export const AddCategory = ({ onNewCategory }) => {
     const handleOnSubmit = e => {
         e.preventDefault();
         if (inputValue.trim().length <= 1) return;
-        onNewCategory(inputValue.trim());
         setInputValue("");
+        onNewCategory(inputValue.trim());
     };
 
     return (
